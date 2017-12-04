@@ -40,6 +40,11 @@ public class Hbm2JavaMojo extends AbstractMojo {
     private boolean createCollectionForForeignKey;
     @Parameter(defaultValue = "true")
     private boolean createManyToOneForForeignKey;
+    @Parameter(defaultValue = "false")
+    private boolean ejb3;
+    @Parameter(defaultValue = "false")
+    private boolean jdk5;
+
 
 
     public void execute() throws MojoExecutionException, MojoFailureException {
@@ -74,6 +79,8 @@ public class Hbm2JavaMojo extends AbstractMojo {
         cfg.readFromJDBC();
 
         POJOExporter pojoExporter = new POJOExporter(cfg, outputDirectory);
+        pojoExporter.getProperties().setProperty("ejb3", String.valueOf(ejb3));
+        pojoExporter.getProperties().setProperty("jdk5", String.valueOf(jdk5));
         getLog().info("Starting POJO export to directory: " + outputDirectory + "...");
         pojoExporter.start();
         getLog().info("Finished " + this.getClass().getSimpleName() + "!");
