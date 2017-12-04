@@ -12,6 +12,32 @@
     <description>Maven Plugin to generate JPA Entities from an existing database.</description>
     <url>http://github.com/stadler/hibernate-tools-maven-plugin</url>
 
+    <developers>
+        <developer>
+            <id>stadler</id>
+            <name>Jacques Stadler</name>
+            <email>jacques.stadler+github@gmail.com</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License</name>
+            <url>http://www.gnu.org/licenses/lgpl-2.1.html</url>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/stadler/hibernate-tools-maven-plugin/issues</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:git://github.com/stadler/hibernate-tools-maven-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:stadler/hibernate-tools-maven-plugin.git</developerConnection>
+        <url>https://github.com/stadler/hibernate-tools-maven-plugin</url>
+    </scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
