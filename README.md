@@ -17,7 +17,7 @@ The plugin declaration may look as follows:
     <plugin>
         <groupId>com.github.stadler</groupId>
         <artifactId>hibernate-tools-maven-plugin</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
         <executions>
             <execution>
                 <phase>generate-sources</phase>
