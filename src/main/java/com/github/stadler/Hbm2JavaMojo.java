@@ -11,6 +11,8 @@ import static org.apache.maven.plugins.annotations.LifecyclePhase.GENERATE_SOURC
 
 /**
  * Mojo to generate Java JPA Entities from an existing database.
+ * <p>
+ * See: https://docs.jboss.org/tools/latest/en/hibernatetools/html_single/#d0e4821
  */
 @Mojo(name = "hbm2java", defaultPhase = GENERATE_SOURCES)
 public class Hbm2JavaMojo extends AbstractHbm2xMojo {
