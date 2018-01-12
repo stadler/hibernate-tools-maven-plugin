@@ -2,16 +2,17 @@
 Maven Plugin to generate JPA Entities from an existing database using hibernate-tools.
 
 ## Development status
-Currently only database reverse engineering configurations (JDBCMetaDataConfiguration) with JPA Entity export (hbm2java) is supported.
+Currently the plugin allows database reverse engineering configurations (JDBCMetaDataConfiguration) to 
+export JPA Entities (hbm2java) and Schema Files (hbm2ddl).
 
-# Documentation
+## Maven Plugin Site
 https://stadler.github.io/hibernate-tools-maven-plugin/
 
 ## Hibernate Tools Documentation
 For details about the usage of hibernate-tools see:
 https://docs.jboss.org/tools/latest/en/hibernatetools/html_single/
 
-## Maven Plugin Usage
+## Usage
 An example project using this plugin can be found here:
 https://github.com/stadler/hibernate-tools-maven-plugin-sample
 
