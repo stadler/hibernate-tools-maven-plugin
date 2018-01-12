@@ -10,7 +10,7 @@
   <name>Hibernate Tools maven plugin</name>
   <description>Maven plugin to provide hibernate-tools reverse engineering and code generation abilities.
   </description>
-  <url>http://github.com/stadler/hibernate-tools-maven-plugin</url>
+  <url>https://stadler.github.io/hibernate-tools-maven-plugin/</url>
 
   <developers>
     <developer>
@@ -78,6 +78,7 @@
     <maven-invoker-plugin.version>3.0.1</maven-invoker-plugin.version>
     <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
     <maven-site-plugin.version>3.7</maven-site-plugin.version>
+    <site-maven-plugin.version>0.12</site-maven-plugin.version>
   </properties>
 
   <dependencies>
@@ -139,6 +140,23 @@
             <goals>
               <goal>run</goal>
             </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.github.github</groupId>
+        <artifactId>site-maven-plugin</artifactId>
+        <version>${site-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>site</goal>
+            </goals>
+            <phase>site</phase>
+            <configuration>
+              <server>github</server>
+              <message>Creating site for ${project.version}</message>
+            </configuration>
           </execution>
         </executions>
       </plugin>
