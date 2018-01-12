@@ -9,6 +9,16 @@
     <version>1.7</version>
   </skin>
 
+  <custom>
+    <fluidoSkin>
+      <gitHub>
+        <projectId>apache/maven-skins</projectId>
+        <ribbonOrientation>right</ribbonOrientation>
+        <ribbonColor>gray</ribbonColor>
+      </gitHub>
+    </fluidoSkin>
+  </custom>
+
   <body>
     <menu name="Overview">
       <item name="Introduction" href="index.html"/>
