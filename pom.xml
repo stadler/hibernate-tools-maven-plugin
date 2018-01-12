@@ -152,7 +152,7 @@
             <goals>
               <goal>site</goal>
             </goals>
-            <phase>site</phase>
+            <phase>deploy</phase>
             <configuration>
               <server>github</server>
               <message>Creating site for ${project.version}</message>
