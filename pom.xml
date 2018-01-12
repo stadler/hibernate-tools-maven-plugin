@@ -152,7 +152,7 @@
             <goals>
               <goal>site</goal>
             </goals>
-            <phase>deploy</phase>
+            <phase>site-deploy</phase>
             <configuration>
               <server>github</server>
               <message>Creating site for ${project.version}</message>
@@ -219,6 +219,9 @@
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>${maven-site-plugin.version}</version>
+          <configuration>
+            <skipDeploy>true</skipDeploy>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
